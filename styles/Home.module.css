@@ -1,10 +1,40 @@
 .container {
-  padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: calc(21px + 15*(100vw - 320px)/960);
+  font-size: calc(20px + 14*(100vw - 280px)/960);
 }
 
+.containerLink {
+  position: relative;
+  margin: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
+.containerLink > * {
+  margin: 10px;
+}
+
+.btnStyle {
+  padding: 10px;
+  font-size: 0.8em;
+  width: 5em;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: beige;
+  transition: all .5s;
+}
+.btnStyle:hover {
+  font-size: 0.9em;
+}
+
+@media only screen  and (max-width: 568px){
+    .containerLink {
+      display: flex;
+      flex-direction: column;
+    }
+}

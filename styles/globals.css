@@ -4,6 +4,14 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+}
+body {
+  background: no-repeat url('https://www.crestwood.com/wp-content/uploads/2020/11/Copy-paste-in-d3651100.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(8px);
 }
 
 a {
@@ -13,4 +21,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@media only screen and (max-height: 568px) {
+  body {
+    height: auto;
+  }
 }

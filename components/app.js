@@ -32,10 +32,14 @@ export default function App() {
     return (
       <div className={styles.container}>
         <h2>Shortened link</h2>
-        <InputLink  setText={(e) => setText(e.target.value)}/>
-        <button onClick={() => getData(text)}>Get Data</button>
-        <OutputLink refLink={refLink}/>
-        <button onClick={() => copyValue(refLink.current)}>Copy Data</button>
+        <div className={styles.containerLink}>
+            <InputLink  setText={(e) => setText(e.target.value)}/>
+            <button className={styles.btnStyle} onClick={() => getData(text)}>Create</button>
+        </div>
+        <div className={styles.containerLink}>
+            <OutputLink refLink={refLink}/>
+            <button className={styles.btnStyle} onClick={() => copyValue(refLink.current)}>Copy</button>
+        </div>
       </div>
     )
   }
